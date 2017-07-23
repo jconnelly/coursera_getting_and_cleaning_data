@@ -25,16 +25,39 @@ The following process steps outline the code that takes place within the <i><b>r
 17. Output the new cleaned up data to a file called: "tidy_data.txt"
 
 ## Variable Names and Variable Function(s)
-filename                    
-	: variable containing the zip file name that will be downloaded
-
-fileURL                     
-	: web location of the file to download for the test data
-* new_working_directory	: concatenated directory for where the test data is located, based off of the "getwd()" and the new folder name
-* features		: variable containing the system read "features.txt"
-* subject_train		: variable containing the system read "subject_train.txt"
-* x_train		: variable containing the system read "x_train.txt"
-* y_train		: variable containing the system read "y_train.txt"
-* subject_test		: variable containing the system read "subject_test.txt"
-* x_test		: variable containing the system read "x_test.txt"
-* y_test		: variable containing the system read "y_test.txt"
+* filename :                    
+	+ variable containing the zip file name that will be downloaded
+* fileURL :                    
+	+ web location of the file to download for the test data
+* new_working_directory	: 
+	+ concatenated directory for where the test data is located, based off of the "getwd()" and the new folder name
+* features : 
+	+ variable containing the system read "features.txt" file
+* subject_train : 
+	+ variable containing the system read "subject_train.txt" file
+* x_train : 
+	+ variable containing the system read "x_train.txt" file
+* y_train : 
+	+ variable containing the system read "y_train.txt" file
+* subject_test : 
+	+ variable containing the system read "subject_test.txt" file
+* x_test : 
+	+ variable containing the system read "x_test.txt" file
+* y_test : 
+	+ variable containing the system read "y_test.txt" file
+* activity_labels :
+	+ variable containing the system read "activity_lables.txt" file
+* x_data_merged :
+	+ merged data using the "rbind" function, variable contains the "x_train" and "x_test" variables data sets
+* y_data_merged :
+	+ merged data using the "rbind" function, variable contains the "y_train" and "y_test" variables data sets
+* subject_data_merged :
+	+ merged data using the "rbind" function, variable contains the "subject_train" and "subject_test" variables data sets
+* x_data :
+	+ variable containing the summation of the "x_data_merged" based on the mean and standards columns data
+* combined_data :
+	+ merged data using the "cbind" function, variable contains the "x_data", "y_data_merged", "subject_data_merged" data sets
+* tidy_data : 
+	+ variable containing the cleaned up data based on the average of the data sets(variables) listed above
+* table_write_output :
+	+ output file containing the tidy_data information 
