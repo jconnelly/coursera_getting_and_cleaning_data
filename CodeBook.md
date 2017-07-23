@@ -25,13 +25,13 @@ The following process steps outline the code that takes place within the <i><b>r
 17. Output the new cleaned up data to a file called: "tidy_data.txt"
 
 ## Variable Names and Variable Function(s)
-filename 		: variable containing the zip file name that will be downloaded
-fileURL			: web location of the file to download for the test data
-new_working_directory	: concatenated directory for where the test data is located, based off of the "getwd()" and the new folder name
-features		: variable containing the system read "features.txt"
-subject_train		: variable containing the system read "subject_train.txt"
-x_train			: variable containing the system read "x_train.txt"
-y_train			: variable containing the system read "y_train.txt"
-subject_test		: variable containing the system read "subject_test.txt"
-x_test			: variable containing the system read "x_test.txt"
-y_test			: variable containing the system read "y_test.txt"
+* filename 		: variable containing the zip file name that will be downloaded
+* fileURL		: web location of the file to download for the test data
+* new_working_directory	: concatenated directory for where the test data is located, based off of the "getwd()" and the new folder name
+* features		: variable containing the system read "features.txt"
+* subject_train		: variable containing the system read "subject_train.txt"
+* x_train		: variable containing the system read "x_train.txt"
+* y_train		: variable containing the system read "y_train.txt"
+* subject_test		: variable containing the system read "subject_test.txt"
+* x_test		: variable containing the system read "x_test.txt"
+* y_test		: variable containing the system read "y_test.txt"
